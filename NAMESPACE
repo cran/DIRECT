@@ -1,0 +1,17 @@
+useDynLib(DIRECT)
+
+export(DIRECT,
+       DPMCMC,
+       resampleClusterProb,
+       relabel,
+       dMVNorm,
+       rMVNorm,
+       dDirichlet,
+       rDirichlet,
+       summaryDIRECT,
+       plotClustersMean,
+       plotClustersSD,
+       plotClustersPCA,
+       simuDataREM,
+       plotSimulation,
+       outputData)
