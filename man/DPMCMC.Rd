@@ -5,7 +5,7 @@
 Dirichlet Process-Based Markov Chain Monte Carlo (MCMC) Sampler for Mixture Model-Based Clustering
 }
 \description{
-The MCMC sampler for \code{\link{DIRECT}}.  In each MCMC iteration, the function updates cluster memberships for all items, allowing for changes in the number of clusters (mixture components).  This update implements a Metropolis-Hastings (MH) sampler developed in Fu, Russell, Bray and Tavare, and an MH sampler developed in Neal (2000).  It also updates parameters specific to each mixture components via MH sampling.  Parameters of interest include the mean vector and standard deviations of the three types of variability.  Additionally, it updates \eqn{\alpha}, the concentration parameter in the Dirichlet-process prior, allowing for Gibbs (Escobar and West, 1995) and MH sampling.  
+The MCMC sampler for \code{\link{DIRECT}}.  In each MCMC iteration, the function updates cluster memberships for all items, allowing for changes in the number of clusters (mixture components).  This update implements a Metropolis-Hastings (MH) sampler developed in Fu et al. (2013), and an MH sampler developed in Neal (2000).  It also updates parameters specific to each mixture components via MH sampling.  Parameters of interest include the mean vector and standard deviations of the three types of variability.  Additionally, it updates \eqn{\alpha}, the concentration parameter in the Dirichlet-process prior, allowing for Gibbs (Escobar and West, 1995) and MH sampling.  
 }
 \usage{
 DPMCMC(file.mcmc.cs, file.mcmc.pars, file.mcmc.probs, file.size, 
@@ -128,7 +128,7 @@ If argument \code{OUTPUT.CLUST.SIZE=TRUE}, an additional file *_mcmc_size.out is
 \references{
 Escobar, M. D. and West, M. (1995) Bayesian density estimation and inference using mixtures. Journal of the American Statistical Association, 90: 577-588. 
 
-Fu, A. Q., Russell, S., Bray, S. J. and Tavare, S. Bayesian clustering with the Dirichlet-process prior.  
+Fu, A. Q., Russell, S., Bray, S. and Tavare, S. (2013) Bayesian clustering of replicated time-course gene expression data with weak signals. The Annals of Applied Statistics. 7(3) 1334-1361.
 
 Neal, R. M. (2000) Markov chain sampling methods for Dirichlet process mixture models. Journal of Computational and Graphical Statistics, 9: 249-265. 
 }

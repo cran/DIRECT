@@ -5,7 +5,7 @@
 Plotting Posterior Estimates of Cluster-Specific Random Effects 
 }
 \description{
-Function \code{plotClustersSD} displays in a single plot the posterior estimates of cluster-specific standard deviations of the three types of variability (random effects) under the DIRECT model.  See figures in Fu, Russell, Bray and Tavare.
+Function \code{plotClustersSD} displays in a single plot the posterior estimates of cluster-specific standard deviations of the three types of variability (random effects) under the DIRECT model.  See figures in Fu et al. (2013).
 }
 \usage{
 plotClustersSD(data.summary, nTime, ...)
@@ -26,7 +26,7 @@ Additional arguments for \code{plot}.
 None.
 }
 \references{
-Fu, A. Q., Russell, S., Bray, S. J. and Tavare, S. Bayesian clustering with the Dirichlet-process prior.  
+Fu, A. Q., Russell, S., Bray, S. and Tavare, S. (2013) Bayesian clustering of replicated time-course gene expression data with weak signals. The Annals of Applied Statistics. 7(3) 1334-1361.
 }
 \author{
 Audrey Q. Fu

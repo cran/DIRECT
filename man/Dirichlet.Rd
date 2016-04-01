@@ -36,10 +36,8 @@ Audrey Q. Fu coded \code{dDirichlet}.
 The code for \code{rDirichlet} is taken from a similar function in R package \code{gregmisc} by Gregory R. Warnes. His code was based on code posted by Ben Bolker to R-News on 15 Dec 2000.  See documentation in gregmisc for further information.
 }
 \examples{
-\dontrun{
 x <- rDirichlet (5, rep (0.5, 3))
 dDirichlet (x[1, ], rep (0.5, 3))
-}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

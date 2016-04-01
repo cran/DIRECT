@@ -197,7 +197,7 @@ If argument \code{OUTPUT.CLUST.SIZE=TRUE}, the fifth file *_mcmc_size.out is als
 \references{
 Escobar, M. D. and West, M. (1995) Bayesian density estimation and inference using mixtures. Journal of the American Statistical Association, 90: 577-588. 
 
-Fu, A. Q., Russell, S., Bray, S. J. and Tavare, S. Bayesian clustering with the Dirichlet-process prior.  
+Fu, A. Q., Russell, S., Bray, S. and Tavare, S. (2013) Bayesian clustering of replicated time-course gene expression data with weak signals. The Annals of Applied Statistics. 7(3) 1334-1361.
 
 Stephens, M. (2000) Dealing with label switching in mixture models. Journal of the Royal Statistical Society, Series B, 62: 795-809.
 

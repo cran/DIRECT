@@ -39,7 +39,7 @@ None.
 Audrey Q. Fu
 }
 \references{
-Fu, A. Q., Russell, S., Bray, S. J. and Tavare, S. Bayesian clustering with the Dirichlet-process prior.  
+Fu, A. Q., Russell, S., Bray, S. and Tavare, S. (2013) Bayesian clustering of replicated time-course gene expression data with weak signals. The Annals of Applied Statistics. 7(3) 1334-1361.
 }
 \seealso{
 \code{\link{summaryDIRECT}} for processing MCMC estimates for clustering and generating the list \code{data.summary} used here.

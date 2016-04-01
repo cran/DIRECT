@@ -38,7 +38,7 @@ Addition arguments for \code{plot}.
 None.
 }
 \references{
-Fu, A. Q., Russell, S., Bray, S. J. and Tavare, S. Bayesian clustering with the Dirichlet-process prior.  
+Fu, A. Q., Russell, S., Bray, S. and Tavare, S. (2013) Bayesian clustering of replicated time-course gene expression data with weak signals. The Annals of Applied Statistics. 7(3) 1334-1361.
 }
 \author{
 Audrey Q. Fu

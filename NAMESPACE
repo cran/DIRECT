@@ -15,3 +15,10 @@ export(DIRECT,
        simuDataREM,
        plotSimulation,
        outputData)
+
+importFrom("grDevices", "rainbow")
+importFrom("graphics", "abline", "axis", "legend", "lines", "matplot",
+             "par", "plot", "points", "text")
+importFrom("stats", "dgamma", "diffinv", "mahalanobis", "median",
+             "princomp", "rbeta", "rgamma", "rnorm", "runif")
+importFrom("utils", "read.delim", "write.table")

@@ -47,7 +47,7 @@ How many times to draw resamples?  Multiple samples are averaged.
 \value{
 Samples of the allocation probability matrix are written to file *_mcmc_probs.out.  This file contains a large matrix of \eqn{HN \times K}, which is \eqn{H} posterior allocation probability matrices stacked up, each individual matrix of \eqn{N \times K}, where \eqn{H} is the number of recorded MCMC samples, \eqn{N} the number of items and \eqn{K} the inferred number of mixture components.}
 \references{
-Fu, A. Q., Russell, S., Bray, S. J. and Tavare, S. Bayesian clustering with the Dirichlet-process prior.  
+Fu, A. Q., Russell, S., Bray, S. and Tavare, S. (2013) Bayesian clustering of replicated time-course gene expression data with weak signals. The Annals of Applied Statistics. 7(3) 1334-1361.
 }
 \author{
 Audrey Q. Fu

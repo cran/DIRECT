@@ -5,7 +5,7 @@
 Time-Course Microarray Gene Expression Data
 }
 \description{
-This data set contains quantile-normalized microarray gene expression measurements of 163 genes from four replicates at 18 time points.  These data are part of the time-course experiment performed on Drosophila with a 5-min pulse of Notch activation (Housden, 2011; Housden et al.).  The experiment was carried out by Sarah Bray, Ben Housden, Alena Krejci and Bettina Fischer.
+This data set contains quantile-normalized microarray gene expression measurements of 163 genes from four replicates at 18 time points.  These data are part of the time-course experiment performed on Drosophila with a 5-min pulse of Notch activation (Housden et al. 2013).  The experiment was carried out by Sarah Bray, Ben Housden, Alena Krejci and Bettina Fischer; see details in Housden et al. (2013).
 }
 \usage{data(tc.data)}
 \format{
@@ -21,11 +21,9 @@ The 18 time points are (in min):
 Microarray data have been cleaned and normalized.  Missing values are imputed.  See supplementary material for Fu, Russell, Bray and Tavare for detail on data pre-processing and missing value imputation.
 }
 \references{
-Fu, A. Q., Russell, S., Bray, S. J. and Tavare, S. Bayesian clustering with the Dirichlet-process prior.  
+Fu, A. Q., Russell, S., Bray, S. and Tavare, S. (2013) Bayesian clustering of replicated time-course gene expression data with weak signals.  The Annals of Applied Statistics. 7(3) 1334-1361.  
 
-Housden, B. E. (2011) Notch targets and EGFR pathway regulation.  PhD thesis.  University of Cambridge.
-
-Housden, B. E., Fu, A. Q., Krejci, A., Bernard, F., Fischer, B., Tavare, S., Russell, S. and Bray, S. J.  Transcriptional dynamics elicited by a short pulse of Notch activation.
+Housden, B. E., Fu, A. Q., Krejci, A., Bernard, F., Fischer, B., Tavare, S., Russell, S. and Bray, S. J. (2013)  Transcriptional dynamics elicited by a short pulse of Notch activation involves feed-forward regulation by E(spl)/Hes genes. PLoS Genetics 9 1 e1003162.
 }
 \examples{
 \dontrun{
