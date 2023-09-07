@@ -28,7 +28,12 @@ function (data, data.summary, SKIP, nTime=length(times), times=1:nTime,...)
 	for (i in 1:nclust)
 	{
 		tmp = which (clust.ind==clust.labels[i])
-		matplot (times, t(ts.mean[tmp,]), xlab="", ylab="", main=paste("Cluster ", i, " (", length(tmp), " genes)", sep=""), type="l", lty=1, col=1, lwd=3)
+		if (length (tmp)>1) {
+		  matplot (times, t(ts.mean[tmp,]), xlab="", ylab="", main=paste("Cluster ", i, " (", length(tmp), " genes)", sep=""), type="l", lty=1, col=1, lwd=3)
+		} else{
+		  plot (times, t(ts.mean[tmp,]), xlab="", ylab="", main=paste("Cluster ", i, " (", length(tmp), " genes)", sep=""), type="l", lty=1, col=1, lwd=3)
+		}
+		#matplot (times, t(ts.mean[tmp,]), xlab="", ylab="", main=paste("Cluster ", i, " (", length(tmp), " genes)", sep=""), type="l", lty=1, col=1, lwd=3)
 		lines (times, post.clust.pars.mean[i,1:nTime], lty=1, lwd=3, col=col.tmp[i])
 		abline (h=0, lty=2, col="brown", lwd=2)
 	}

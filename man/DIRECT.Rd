@@ -272,8 +272,18 @@ data.name="tmp"          # prefix of output files
 tmp.summary = summaryDIRECT (data.name)
 
 # Plot clustering results
+#
+# If the plots do not display well
+# use pdf() to generate the plots in an external pdf
+#
 # Clustered mean profiles
 plotClustersMean (data, tmp.summary, SKIP=2, times=times)
+#
+# To use pdf(), run the following lines in R
+# > pdf ("plot_means.pdf")
+# > plotClustersMean (data, tmp.summary, SKIP=2, times=times)
+# > dev.off()
+#
 par (mfrow=c(1,1))
 # Posterior estimates of standard deviations 
 # of three types of variability in each cluster

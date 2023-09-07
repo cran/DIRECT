@@ -1,4 +1,4 @@
-useDynLib(DIRECT)
+useDynLib(DIRECT, .registration = TRUE)
 
 export(DIRECT,
        DPMCMC,

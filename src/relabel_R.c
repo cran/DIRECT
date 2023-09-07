@@ -313,7 +313,7 @@ void solveMunkres(double **M, int *Result, int n, int PRINT)
 {
 	int i,j,covers;
 	double min;
-	int tmp;
+	/* int tmp;  */
 	int *Starred,*Primed;
 	
 	//Starred zeros indicates assignment pairs (Result) when the algorithm
@@ -400,7 +400,8 @@ void solveMunkres(double **M, int *Result, int n, int PRINT)
 	while (covers != n)
 	{
         //Steps 2&3: Changing or adding the cover lines until all zeros are covered
-        tmp = CoverUncoveredZeros(M,Starred,Primed,n,&covers);
+     /* tmp = CoverUncoveredZeros(M,Starred,Primed,n,&covers);  */
+        CoverUncoveredZeros(M,Starred,Primed,n,&covers);
         if (covers == n) break;
 		
         /*
@@ -514,7 +515,7 @@ void relabel_R (int * perm_mtx, double * prob_mtx, int * niter_mcmc, int * nitem
 {
 	int H=niter_mcmc[0], N=nitem[0], K=nclust[0];
 	double THRESHOLD=threshold[0];
-	int PRINT=print_flag[0];
+	/* int PRINT=print_flag[0]; */
 	double ***Pmtx;		// H-by-N-by-K; containing H posterior probability matrices, each of N-by-K
 	double **Qmtx;		// N-by-K; optimal posterior probability matrix in each iteration
 	double **Cmtx;		// K+1-by-K+1; cost matrix for each MCMC sample
@@ -523,10 +524,10 @@ void relabel_R (int * perm_mtx, double * prob_mtx, int * niter_mcmc, int * nitem
 	double **PmtxReordered;	// N-by-K; posterior probability matrix reordered according to current permutations
 	int *Result;			// int pointer vector of length K; storing permutation for an MCMC sample
 	int h, n, k;
-	int i;
+	/* int i; */
 	double riskCurr, riskNew;
 	double converge = INF;
-	int niter = 1;
+//	int niter = 1;
 		
 	// Initialize
 	//printf("no of iterations: %d\n", H);
@@ -715,7 +716,7 @@ void relabel_R (int * perm_mtx, double * prob_mtx, int * niter_mcmc, int * nitem
 					Vmtx[h][k] = VmtxUpdated[h][k];
 		}
 		
-		niter++;
+//		niter++;
 	}
 	
     /*

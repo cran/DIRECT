@@ -10,14 +10,6 @@
   \item Functions for processing MCMC samples and plotting the clustering results.
   \item Functions for simulating data under the random-effects mixture model.
 }
-\tabular{ll}{
-Package: \tab DIRECT\cr
-Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2011-10-19\cr
-License: \tab GPL (>=2)\cr
-LazyLoad: \tab yes\cr
-}
 
 See \code{\link{DIRECT}} for details on using the function for clustering.
 
